@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EEEC1817-9D8E-4443-A44C-41C8C45F91C8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>hotelOtomasyonu</RootNamespace>
+    <AssemblyName>hotelOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anaEkran.Designer.cs">
+      <DependentUpon>anaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="csMusteriEkrani.cs" />
+    <Compile Include="csOdalar.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKayitliMüsteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKayitliMüsteri.Designer.cs">
+      <DependentUpon>frmKayitliMüsteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmkayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkayitOl.Designer.cs">
+      <DependentUpon>frmkayitOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriKayit.Designer.cs">
+      <DependentUpon>frmMusteriKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOdalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOdalar.Designer.cs">
+      <DependentUpon>frmOdalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs" />
+    <Compile Include="kayitGiris.cs" />
+    <Compile Include="musteriEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriEkrani.Designer.cs">
+      <DependentUpon>musteriEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriKayit.cs" />
+    <Compile Include="MusteriKayitOl.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SifreGüncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreGüncelle.Designer.cs">
+      <DependentUpon>SifreGüncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yeniSifre.cs" />
+    <EmbeddedResource Include="anaEkran.resx">
+      <DependentUpon>anaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKayitliMüsteri.resx">
+      <DependentUpon>frmKayitliMüsteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkayitOl.resx">
+      <DependentUpon>frmkayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriKayit.resx">
+      <DependentUpon>frmMusteriKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOdalar.resx">
+      <DependentUpon>frmOdalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriEkrani.resx">
+      <DependentUpon>musteriEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SifreGüncelle.resx">
+      <DependentUpon>SifreGüncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\kapatma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\GİRİŞ RESİM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\iconctar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icons8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geri_buton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-642.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-643.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Dosi_Panorama2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Hotel-Baia-Lara-Genel-119653.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MOBİL3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icons8-go-back-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\15032756_QY3VILb4B4l9zLut1gWm6GfxDwAxL3vtzzoVXWhqqQA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Sapore_otel_odası.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icons8-shutdown-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\havuz-baglantili-antalya-otelleri-sueno-hotels-deluxe-kapak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\681877d5dff9ecff0353263ee6fa00ae.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\1_8634.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\ocean-waves-blue-sea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\26.-Yinlianzhuitan-Şelalesi-Çin-630x445.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icons8-go-back-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icons8-delete-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\8PEZL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\backcolor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\123456.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\258963.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\369852147.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icons8-go-back-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\selale2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\galeri_gokyuzu-jpg_391886912_1440852724.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
